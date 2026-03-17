@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+    <body>
+
+
+        <h1>DOM</h1>
+
+        <h3>Shopping List</h3>
+        <input type="text" id="itemInput" placeholder="Enter an item">
+        <button onclick="addItem()">Add Item</button>
+        <button onclick="clearList()">Clear List</button>
+
+        <ul id="shoppingList">
+        </ul>
+
+        
+    </body>
+
+    <script>
+        function addItem(){
+            let itemInput=document.getElementById("itemInput");
+
+            newListItem=document.createElement("li");
+            newListItem.textContent=itemInput.value;
+
+            let shoppingList=document.getElementById("shoppingList");
+            shoppingList.appendChild(newListItem);
+        }
+
+        function clearList(){
+            let shoppingList=document.getElementById("shoppingList");
+            shoppingList.innerHTML="";
+        }
+    </script>
+</html>

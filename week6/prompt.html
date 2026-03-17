@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt</title>
+    </head>
+    <body>
+        <h1>Prompt</h1>
+        
+        <button onclick="execute()">Execute</button>
+     
+
+       
+
+        
+        <script>
+
+            function execute(){
+                
+                // let confirmation=prompt("Are you sure you want to execute this action? Type 'yes' to confirm.");
+                // if (confirmation == "yes"){
+                //     window.location.href="https://www.google.com";
+                // }
+
+                let confirmation=confirm("Are you sure you want to execute this action?");
+                if (confirmation){
+                    window.location.href="https://www.google.com";
+                }
+            }
+            
+
+        </script>
+        
+    </body>
+</html>

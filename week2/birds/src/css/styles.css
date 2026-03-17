@@ -1,0 +1,139 @@
+* {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+dark{
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+body{
+    background-color: rgb(221, 252, 243);
+}
+
+.nav {
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    margin-top:5px;
+    padding:20px;
+    background-color: rgb(221, 252, 243);
+}
+
+
+
+nav {
+    background-color: rgb(41, 41, 41);
+    padding: 17px;
+    text-align: center;
+    font-size: large;
+    border-radius: 20px;
+    width: 750px;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* margin: 0px 10px 0px 10px; */
+}
+
+.active{
+    font-weight: bold;
+}
+
+nav a:hover {
+    color:rgb(86, 154, 255);
+}
+
+img {
+    border-radius: 5%;
+}
+
+h1, h2, h3{
+   text-align: center; 
+}
+
+.inlinePara {
+    display: inline-block;
+    width: 60%;
+    margin-left: 20px;
+
+}
+
+.headerImage {
+    margin-left: 20px;
+    float: left;
+
+}
+
+table, th, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+
+}   
+
+
+ul {
+    text-align: center;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+ol {
+    text-align: center;
+    list-style-type:armenian;
+    list-style-position: inside;
+
+}
+
+footer{
+    text-align: center;
+    font-size: small;
+    margin-top: 20px;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    padding: 12px;
+    font-size: 17px;
+}
+
+
+.quote{
+    background-color: rgb(61, 84, 255);
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+    border-radius: 20px;
+    width: 50%;
+    padding: 20px 20px 0 20px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    height: 75px;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+}
+
+.quote p{
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+    background-color: rgb(255, 170, 44);
+    padding: 10px,0px,0px,10px;
+    margin: 0px,0px,0px,0px;
+    height: 30px;
+    border-radius: 20px
+    
+}
+
+
+th {
+    background-color: silver;
+}

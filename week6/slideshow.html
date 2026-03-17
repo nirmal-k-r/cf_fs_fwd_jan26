@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slideshow</title>
+    </head>
+    <body>
+        <h1>Slideshow</h1>
+        <button onclick="prevImage()">Previous</button>
+        <img id="slideshow" src="" width="500">
+        <button onclick="nextImage()">Next</button>
+
+       
+
+        
+        <script>
+            let images=[
+                "https://static.vecteezy.com/system/resources/thumbnails/050/393/628/small/cute-curious-gray-and-white-kitten-in-a-long-shot-photo.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS0IQhVr9DDJCq61QX28zCoiqDrvezBh5ylw&s",
+                "https://i.ytimg.com/vi/HXUHHGOFFMk/maxresdefault.jpg"
+            ];
+
+
+            let img=document.querySelector("#slideshow");
+
+            let i=0;
+            img.src=images[i];
+
+
+            function nextImage(){
+                i=i+1;
+                if (i>=images.length){
+                    i=0;
+                }
+                img.src=images[i];
+            }
+
+            function prevImage(){
+                i=i-1;
+                if (i<0){
+                    img.src=images[images.length-1];
+                    i=images.length-1;
+                }
+                img.src=images[i];
+            }
+            
+
+
+        </script>
+        
+    </body>
+</html>

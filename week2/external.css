@@ -1,0 +1,27 @@
+h1 {
+    color:blue;
+}
+
+body{
+    background-color: rgb(197, 153, 225);
+}
+
+.redText{
+    color:red;
+}
+
+.center{
+    text-align: center;
+}
+
+.roundedImage{
+    border-radius:5%;
+}
+
+#bigFont{
+    font-size: 50px;
+}
+
+#purpleText{
+    color: purple;
+}
